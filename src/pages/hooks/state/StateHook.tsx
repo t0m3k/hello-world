@@ -1,7 +1,7 @@
-import { NextPage } from "next";
+import type { NextPage } from "next";
 import React, { useState } from "react";
 
-const SayHello = () => {
+const StateHook = () => {
   const [quantity, setQuantity] = useState(0);
 
   // function increment(it: number) {
@@ -34,4 +34,4 @@ const HelloElement: NextPage<{ who: string }> = (props) => (
   <p className="m-2 w-fit rounded-xl bg-green-800 p-2">Hello, {props.who}!</p>
 );
 
-export default SayHello;
+export default StateHook;
